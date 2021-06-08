@@ -10,11 +10,9 @@
 /*    */ import javafx.scene.layout.VBox;
 /*    */ import javafx.stage.Stage;
 /*    */ 
-/*    */ 
-/*    */ 
-/*    */ public class game
-/*    */   extends Application
+/*    */ public class game extends Application
 /*    */ {
+         //This class runs the game
 /*    */   Stage window;
 /*    */   public static int pChoice;
 /*    */   
@@ -24,10 +22,12 @@
 /*    */ 
 /*    */ 
 /*    */   
-/*    */   public static boolean play = true;
+/*    */   public static boolean play = true; 
+           //This tracks if the user is still playing
 /*    */ 
 /*    */   
 /*    */   public void start(Stage primaryStage) throws Exception {
+           //This method opens the main window where the player chooses if they're playing PVP or PVC
 /* 31 */     this.window = primaryStage;
 /* 32 */     this.window.setTitle("Rock Paper Scissors");
 /*    */     
@@ -51,9 +51,3 @@
 /* 51 */     this.window.show();
 /*    */   }
 /*    */ }
-
-
-/* Location:              /Users/kavitadoobay/Downloads/week3.jar!/game.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
