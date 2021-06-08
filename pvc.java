@@ -9,10 +9,10 @@
 /*    */ import javafx.scene.layout.VBox;
 /*    */ import javafx.stage.Stage;
 /*    */ 
-/*    */ public class pvc {
+/*    */ public class pvc {//This class runs a PVC game
 /* 13 */   public static int p1Counter = 0; public static int p1; public static int comp;
 /*    */   
-/*    */   public static void getP1Move() {
+/*    */   public static void getP1Move() {//This method shows the window for player one to pick their move, gets the computer's move and continually updates the game until it ends
 /* 16 */     Stage window = new Stage();
 /* 17 */     window.setTitle("Player 1");
 /*    */     
@@ -55,9 +55,3 @@
 /* 55 */     window.show();
 /*    */   }
 /*    */ }
-
-
-/* Location:              /Users/kavitadoobay/Downloads/week3.jar!/pvc.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
