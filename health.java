@@ -1,6 +1,7 @@
 /*    */ import java.util.Random;
 /*    */ 
 /*    */ public class health {
+         //This class tracks the health of the player and the computer
 /*  4 */   public static int health1 = 2;
 /*  5 */   public static int charge1 = 0;
 /*  6 */   public static int damage1 = 0;
@@ -11,6 +12,7 @@
 /* 11 */   public static int critHit2 = 0;
 /* 12 */   static Random random = new Random();
 /*    */   public static void updateHealth(int i) {
+           //based on who wins, the health of each player is updated, where they wither sustain damage, or gets a random critical hit
 /* 14 */     if (i == 1) {
 /* 15 */       health1++;
 /* 16 */       checkHealth1();
@@ -82,9 +84,3 @@
 /* 82 */       damage1 = 0; 
 /*    */   }
 /*    */ }
-
-
-/* Location:              /Users/kavitadoobay/Downloads/week3.jar!/health.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
