@@ -1,15 +1,15 @@
-/*     */ import javafx.event.ActionEvent;
-/*     */ import javafx.geometry.Pos;
-/*     */ import javafx.scene.Node;
-/*     */ import javafx.scene.Scene;
-/*     */ import javafx.scene.control.Button;
-/*     */ import javafx.scene.control.Label;
-/*     */ import javafx.scene.layout.VBox;
-/*     */ import javafx.scene.text.Font;
-/*     */ import javafx.stage.Stage;
-/*     */ 
+ import javafx.event.ActionEvent;
+import javafx.geometry.Pos;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
+import javafx.stage.Stage;
 /*     */ public class compareMoves {
-/*     */   public static void pcScoreShow(int p, int c) {
+          //Thos class compares the computer and player movues to show a score screen
+/*     */   public static void pcScoreShow(int p, int c) {// This method sets up the window to show a results screen for every possible case
 /*  13 */     p1 = p;
 /*  14 */     p2 = c;
 /*  15 */     String s = "";
@@ -450,9 +450,3 @@
 /*     */   public static int p1;
 /*     */   public static int p2;
 /*     */ }
-
-
-/* Location:              /Users/kavitadoobay/Downloads/week3.jar!/compareMoves.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
