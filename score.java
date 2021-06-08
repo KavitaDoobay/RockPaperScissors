@@ -9,7 +9,7 @@
 /*     */ import javafx.stage.Stage;
 /*     */ 
 /*     */ public class score
-/*     */ {
+/*     */ {//This class shows the final score, high score, and keeps track of the overall rounds and winning streaks 
 /*     */   public static int p1streak;
 /*     */   public static int p2streak;
 /*     */   public static int p1rounds;
@@ -18,7 +18,7 @@
 /*     */   public static int temp1;
 /*  19 */   public static int highscore = 0;
 /*  20 */   public static int games = 0;
-/*     */   public static void update(int w) {
+/*     */   public static void update(int w) { //This method updates the score by tracking how many rounds each player has won, and the high score
 /*  22 */     games++;
 /*  23 */     if (games == 3) {
 /*  24 */       if (w == 1) {
@@ -66,7 +66,7 @@
 /*     */ 
 /*     */ 
 /*     */   
-/*     */   public static void showScore() {
+/*     */   public static void showScore() {//This class shows the final window with the overall streaks and how many rounds have been won by each player
 /*  70 */     Stage window = new Stage();
 /*  71 */     window.setTitle("Score");
 /*     */     
@@ -88,7 +88,7 @@
 /*  88 */     window.setScene(scene);
 /*  89 */     window.show();
 /*     */   }
-/*     */   public static void showHighScore() {
+/*     */   public static void showHighScore() {//THis opens a window that shows the highest score, being the largest amount of rounds won
 /*  92 */     Stage window = new Stage();
 /*  93 */     window.setTitle("High Score");
 /*     */     
@@ -99,7 +99,7 @@
 /*     */ 
 /*     */ 
 /*     */     
-/* 102 */     VBox layout = new VBox(10.0D);
+/* 102 */     VBox layout = new VBox(10.0);
 /* 103 */     layout.getChildren().addAll((Object[])new Node[] { (Node)p1score, (Node)exit });
 /* 104 */     layout.setAlignment(Pos.CENTER);
 /* 105 */     Scene scene = new Scene((Parent)layout, 300.0D, 300.0D);
@@ -108,9 +108,3 @@
 /* 108 */     window.show();
 /*     */   }
 /*     */ }
-
-
-/* Location:              /Users/kavitadoobay/Downloads/week3.jar!/score.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
